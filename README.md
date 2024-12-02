@@ -1,7 +1,7 @@
 # WizardZ ✨  
 A modern and dynamic frontend clone built with **HTML**, **CSS**, **JavaScript**, and animations powered by **GSAP (GreenSock Animation Platform)**.  
 
-![WizardZ Preview](./assets/wizardz-preview.png)
+![WizardZ Preview](https://github.com/sairam5686/WizardZ/blob/main/WizardZ(Clone)/final_img.jpg)
 
 ---
 
