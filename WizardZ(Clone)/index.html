@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"rel="stylesheet"/>
+    <title>WizardZ</title>
+    <style>
+        @font-face {
+            font-family: sai;
+            src: url(./3856NeueMachina.woff2);
+        }
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body,html{
+            margin: 0;
+            padding: 0;
+
+        }
+        body{
+            font-family: sai;
+        }
+
+        /* start for section-1 */
+
+        .section-1{
+            position: relative;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+           align-items: center;
+            padding: 30px 50px;
+            height: 10vh;
+            /* background-color: crimson; */
+            /* border-bottom: 2px solid black; */
+        }
+
+        .ri-shining-2-fill{
+            display: inline-block;
+            rotate: 45deg;
+        }
+        nav .part-2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 70px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .req-but{
+            background-color: transparent;
+            border-radius: 5px;
+            padding: 10px 20px;
+            height: 50px;
+            width: 200px;
+            font-size: 15px;
+        }
+        .req-but:hover{
+            background-color: #111;
+            color: #fff;
+            transition: 1s;
+        }
+        
+        nav h1{
+            font-size: 30px;
+            /* font-weight: 800; */
+        }
+        .navelem{
+            font-weight: 550;
+        }
+        .banner{
+            display: flex;
+            height:75vh ;
+            /* background-color: crimson; */
+            /* border: 1px solid black; */
+            padding:0px  50px;
+        }
+        .banner-1{
+            height: 100%;
+            width: 51%;
+            /* border: 1px solid black; */
+            /* background-color: aqua; */
+        }
+
+        .banner-1 h1{
+            font-size: 70px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-top: 80px;
+            margin-bottom: 30px;
+        }
+        .banner-1 p{
+            font-size: 18px;
+            line-height: 1.4;
+            font-weight: 500;
+            margin-bottom: 20px; 
+        }
+
+
+        .banner-2{
+            height: 100%;
+            width:60% ;
+            /* background-color: bisque; */
+        }
+        .consult-but{
+            background-color: #000;
+            height: 50px;
+            border-radius: 10px;
+            padding: 10px 20px;
+            color: #fff;
+            font-weight: 50;
+            font-size:15px ;
+            /* display: flex; */
+            /* justify-content: space-between;
+            align-items: center; */
+            word-spacing: 10px;
+            letter-spacing: 2px;
+            border: none;
+        }
+        .consult-but:hover{
+            background-color: white;
+            color: #000;
+            border: 1px solid black;
+            transition: 1s;
+        }
+
+        .banner-2{
+           position: relative;
+           right: 0%;
+            /* border: 1px solid black; */
+        }
+        .banner-2 img{
+            position: absolute;
+            right: 0%;
+            /* width: 100%; */
+        }
+        .brand-flow{
+            margin-top: 3vh;
+            padding: 0px 50px;
+            height: 10vh;
+            display: flex;
+            /* background-color: royalblue; */
+            justify-content: space-between;
+            gap: 50px;
+            align-items: center;
+        }
+        .brand-flow img{
+            height: 5vh;
+        }
+        /* end for section-1 */
+
+        .section-2{
+            /* border: 1px black solid; */
+            height: 100vh;
+            width: 100%;
+            padding: 30px 50px;
+        }
+        .services{
+            /* border: 1px solid black; */
+            height: 20vh;
+            display: flex;
+            justify-content: flex-start;
+            align-items:center;
+            gap: 50px;
+            padding: 80px 0px;
+        }
+        .services h1{
+            font-size: 50px;
+            background-color: #9ae589;
+            border-radius: 5px;
+
+        }
+        .services p{
+            width: 140vh;
+        }
+
+        .container{
+            
+            padding: 20px 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap:50px;
+           column-gap: 50px;
+            flex-wrap: wrap;
+            
+        }
+        .elements{
+            display: flex;
+            height: 32vh;
+            width: 48%;
+            /* background-color: crimson; */
+            border: 1px solid black;
+            border-radius: 20px;
+        }
+        
+        .elements .part-1{
+
+            padding: 20px 20px;
+            height: 100%;
+            width: 60%;
+            /* background-color: bisque; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .elements .part-2{
+           
+            height: 100%;
+            width: 40%;
+        }
+       .bgs{
+            background: url('https://images.unsplash.com/photo-1718724609886-ad8c6091d529?q=80&w=1956&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); 
+            
+            height: 100%;
+            border-radius: 0px 20px 20px 0px;
+            
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+
+        .bgs2{
+            background: url('https://images.unsplash.com/photo-1645356946975-724932a1f520?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); 
+        
+            height: 100%;
+            border-radius: 0px 20px 20px 0px;
+            
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+
+        .section-3{
+            margin-top: 4%;
+            padding: 30px 50px;
+
+        }
+        .part1{
+            height: 40vh;
+            width: 100%;
+            border-radius: 20px;
+            background-color: rgba(241, 241, 241, 0.697);
+            position: relative;
+            display: flex;
+        }
+        .sub-1{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 50px 50px 50px 50px;
+            height: 100%;
+            width: 50%;
+
+        }
+        .proposal{background-color: #000;
+            height: 50px;
+            width: 300px;
+            border-radius: 10px;
+            padding: 10px 20px;
+            color: #fff;
+            font-weight: 50;
+            font-size:15px ;
+            /* display: flex; */
+            /* justify-content: space-between;
+            align-items: center; */
+            word-spacing: 10px;
+            letter-spacing: 2px;
+            border: none;
+
+        }
+        .proposal:hover{
+            background-color: white;
+            color: #000;
+            border: 1px solid black;
+            transition: 1s;
+        }
+
+        .sub-2{
+            width: 50%;
+            height: 100%;
+            position: relative;
+            /* background-color: #000; */
+        }
+        .bg-sub-2{
+            background: url('https://positivustheme.vercel.app/services/Illustration.svg');
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            right: 0%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+        .case{ 
+            /* border: 1px solid black; */
+            /* margin-top:2% ; */
+            height: 20vh;
+            display: flex;
+            justify-content: flex-start;
+            align-items:center;
+            gap: 50px;
+            padding: 80px 0px;
+        }
+        .case h1{
+            font-size: 50px;
+            background-color: #9ae589;
+            border-radius: 5px;
+
+        }
+        .case p{
+            width: 100vh;
+            font-size: 20px;
+        }
+
+
+
+        .three-row{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            height: 40vh;
+            width: 100%;
+            border-radius: 20px;
+            background-color: #111;
+        }
+
+
+
+       .column{
+       display: flex;
+       margin: 25px;
+       border-right: 0.5px white solid ;
+       flex-direction: column;
+       justify-content: space-around;
+        padding: 25px;
+        color: white;
+       }
+
+       .column h4{
+        font-size:15px ;
+        font-weight:100;
+       }
+
+
+
+       .column3{
+       display: flex;
+       margin: 20px;
+       /* border-right: 0.5px white solid ; */
+       flex-direction: column;
+       justify-content: space-around;
+        padding: 20px;
+        color: white;
+       }
+
+       .column3 h4{
+        font-size:15px ;
+        font-weight:100;
+       }
+
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="section-1">
+        <!-- for navbar start -->
+        <nav>
+            <h1><i class="ri-shining-2-fill"></i>WizardZ</h1>
+            <div class="part-2">
+                <h3 class="navelem">About Us</h3>
+                <h3 class="navelem">Services</h3>
+                <h3 class="navelem">Use Case</h3>
+                <h3 class="navelem">Pricing</h3>
+                <h3 class="navelem">Blog</h3>
+                <button class="req-but">Request a quote</button>
+            </div>
+            <!-- for navbar end -->
+        </nav>
+
+
+        <div class="banner">
+            <div class="banner-1">
+                <h1>Navigating the digital landscape for success</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore odio quaerat mollitia,
+                     iusto pariatur reprehenderit obcaecati impedit incidunt sunt ratione vel
+                     ducimus necessitatibus consectetur nemo eligendi officia aperiam corrupti accusantium.</p>
+                     <button class="consult-but">Book a Consultation</button>
+            </div>
+            <div class="banner-2">
+                <img src="https://www.tapat.link/assets/images/section-1.JPG" height="100%"  >
+            </div> 
+        </div>
+
+
+        <div class="brand-flow">
+            <img src="https://www.allaboutlean.com/wp-content/uploads/2019/10/Amazon-Logo.png" alt="">
+            <img src="https://cdn.worldvectorlogo.com/logos/dribbble-4.svg" alt="">
+            <img src="https://growthgoats.com/hubfs/hubspot-logo-png-transparent.png" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRDYTqzqvXPGK2VOxhVJCmdmDbfpzWDqQDEQ&s" alt="">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1200px-Netflix_2015_logo.svg.png" alt="">
+            <img src="https://freelogopng.com/images/all_img/1685422532zoom-logo-png.png" alt="">
+        </div>
+    </div>
+
+<div class="section-2">
+<div class="services">
+    <h1>Services</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+    Doloribus quasi voluptas praesentium rem hic quo saepe, impedit, quibusdam consectetur, 
+    nostrum ipsa accusantium! Blanditiis facere ab amet a, accusantium maiores dolorem!
+    </p> 
+</div>
+
+<div class="container">
+
+
+    <div class="elements">
+        <div class="part-1">
+            <h1>
+                Search engine optimization
+            </h1>
+            <h4 style="color: #9ae589;">Learn more</h4>
+        </div>
+        <div class="part-2">
+            <div class="bgs">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="elements" style="background-color: #000; color: white;">
+        <div class="part-1">
+            <h1>
+                Search engine optimization
+            </h1>
+            <h4 style="color: #9ae589;">Learn more</h4>
+        </div>
+        <div class="part-2">
+            <div class="bgs2">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="elements" style="background-color: #000; color: white;">
+        <div class="part-1">
+            <h1>
+                Search engine optimization
+            </h1>
+            <h4 style="color: #9ae589;">Learn more</h4>
+        </div>
+        <div class="part-2">
+            <div class="bgs2">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="elements">
+        <div class="part-1">
+            <h1>
+                Search engine optimization
+            </h1>
+            <h4 style="color: #60b94c79;">Learn more</h4>
+        </div>
+        <div class="part-2">
+            <div class="bgs">
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    
+
+<div class="section-3">
+    <div class="part1">
+        <div class="sub-1">
+
+            <h1>Let's make thing happen</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis repudiandae optio modi sapiente aliquid assumenda totam magnam, impedit quo sed.</p>
+            <button class="proposal">Get your free proporsal</button>
+        </div>
+        <div class="sub-2">
+            <div class="bg-sub-2">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="part2">
+        <div class="case">
+            <h1>Case Studies</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ea dolorem distinctio laudantium deleniti nihil.</p> 
+        </div>
+
+        <div class="three-row">
+            <div class="column">
+
+                <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum minus doloribus consequatur nisi,
+                     reprehenderit tempore sunt unde libero repellat, quos hic aliquam tenetur deserunt dolor?
+                </h4>
+
+                <h3><i class="ri-arrow-right-up-line" style="color: #9ae589;"></i>Learn more</h3>
+            </div>
+            <div class="column">
+                <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum minus doloribus consequatur nisi,
+                    reprehenderit tempore sunt unde libero repellat, quos hic aliquam tenetur deserunt dolor?
+               </h4>
+
+               <h3><i class="ri-arrow-right-up-line" style="color: #9ae589;"></i>Learn more</h3>
+
+            </div>
+            <div class="column3">
+                <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum minus doloribus consequatur nisi,
+                    reprehenderit tempore sunt unde libero repellat, quos hic aliquam tenetur deserunt dolor?
+               </h4>
+
+               <h3><i class="ri-arrow-right-up-line" style="color: #9ae589;"></i>Learn more</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./scripts.js"></script>
+</body>
+</html>
