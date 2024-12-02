@@ -7,7 +7,6 @@ A modern and dynamic frontend clone built with **HTML**, **CSS**, **JavaScript**
 
 ## 🌟 Features  
 
-- **Responsive Design**: Seamlessly adapts to all screen sizes.  
 - **Sleek Animations**: Smooth transitions and interactions with GSAP.  
 - **Interactive UI**: Engaging elements to captivate users.  
 - **Clean Code**: Modular structure for ease of understanding and customization.  
